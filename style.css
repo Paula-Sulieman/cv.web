@@ -1,0 +1,529 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    font-family: "Roboto", sans-serif;
+}
+
+a
+{
+    all: unset;
+}
+
+ul li
+{
+    list-style: none;
+    table-layout: 2;
+}
+
+::-webkit-scrollbar
+{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track
+{
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: rgb(132, 0, 255);
+    border-radius: 5px;
+}
+
+/*===== HEADER SECTION =====*/
+
+header.header
+{
+    padding: 25px 12%;
+    background-color: #000000;
+    color: rgb(236, 220, 213);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo
+{
+    font-size: 35px;
+    font-weight: 700;
+}
+nav.navbar ul
+{
+    display: flex;
+    gap: 32px;
+    font-size: 20px;
+    
+}
+nav.navbar ul li
+{
+    cursor: pointer;
+}
+
+nav.navbar ul li a
+{
+    transition: 0.3s;
+}
+
+nav.navbar ul li a:hover
+{
+    color: #000ac7;
+    border-bottom: 1px solid black;
+}
+
+/*===== HOME SECTION =====*/
+main.home
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    gap: 7rem;
+    padding: 30px 12% 0;
+    align-items: center;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+.home_content h3
+{
+    font-size: 45px;
+}
+
+.home_content h1
+{
+    font-size: 65px;
+    line-height: 1.2;
+}
+
+.home_content h1 span
+{  
+    color: #0800a5;
+}
+
+.home_content
+{
+    font-size: 20px;
+    margin: 25px 0 30px;
+}
+
+.contact button
+{
+    width: 160px;
+    outline: none;
+    border: none;
+    background-color: #0800a5;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    opacity: 0.8;
+    transition: 0.3s;
+    animation: movebtn 1s infinite 3s;
+}
+
+.contact button:hover
+{
+    opacity: 1;
+}
+
+.home_image img
+{
+    border-radius: 20px;
+    filter: drop-shadow(0 0 15px black);
+}
+
+/* animations */
+
+@keyframes movebtn
+{
+    0% {transform: scale(1);}
+    50% {transform: scale(1.08);}
+    100% {transform: scale(1);}
+}
+
+/*===== ABOUT SECTION =====*/
+
+.about 
+{
+    padding: 12% 12%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.about_img img
+{
+    border-radius: 20px;
+    filter: drop-shadow(0 0 15px rgb(255, 255, 255));
+}
+
+.about_content
+{
+    color: whitesmoke;
+}
+
+.about_content heading h2
+{
+    justify-content: center;
+    top: 15px;
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.about_content h1
+{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+.about_content h4
+{
+    font-size: 23px;
+    line-height: 1.6;
+    margin-top: 30px;
+}
+
+.about_content p
+{
+    padding: 5px;
+    font-size: 18px;
+    line-height: 1.1;
+}
+
+.about_content ul li
+{
+    cursor: pointer;
+    font-size: 18px;
+    margin: 5px 0 0;
+}
+/*===== EXPERIANCE SECTION =====*/
+section.experiance
+{
+    padding: 8% 12% 13%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+}
+
+section.experiance .heading
+{
+    position: absolute;
+    top: 20px;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.605);
+}
+
+.experiance_content
+{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.experiance_content .experiance
+{
+    background-color: #95959567;
+    border-radius: 10px;
+    max-width: 430px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.experiance_content .experiance:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+.experiance_content .experiance img
+{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.experiance_content .experiance h3
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px 0;
+    margin-top: 0px;
+    color: rgba(0, 0, 0, 0.316);
+}
+
+.experiance_content .experiance:hover h3
+{
+    color: #0c0c0c;
+    transition: 0.3s;
+}
+
+.experiance_content .experiance .time
+{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.experiance_content .experiance p
+{
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 25px;
+    font-weight: 350;
+}
+
+.experiance_content .experiance li
+{
+    font-size: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+/*===== PROJECT SECTION =====*/
+
+section.projects
+{
+    padding: 8% 12% 13%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+section.projects .heading
+{
+    position: absolute;
+    top: 20px;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+}
+
+.projects_content
+{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.projects_content .project
+{
+    background-color: beige;
+    border-radius: 10px;
+    max-width: 435px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.projects_content .project:hover
+{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19);
+}
+
+.projects_content .project img
+{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.projects_content .project h3
+{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+    color: rgba(0, 0, 0, 0.316);
+}
+
+.projects_content .project:hover h3
+{
+    color: #0c0c0c;
+    transition: 0.3s;
+}
+
+.projects_content .project p
+{
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 60px;
+
+}
+
+.project_links
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project_links .bxl-github
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.project_links .bxl-linkedin
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/*===== CONTACT SECTION =====*/
+section.contact
+{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+section.contact .heading
+{
+    font-size: 60px;
+    color: #00000065;
+    margin-bottom: 100px;
+    position: relative;
+    top: 40px;
+}
+
+section.contact form
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 50em;
+    margin: 1rem auto 0; 
+}
+
+section.contact form .input_box input, 
+section.contact form textarea
+{
+    background-color: beige;
+    width: 80%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 30px;
+}
+
+section.contact .send_btn 
+{
+    margin-bottom: 50px;
+}
+
+section.contact .send_btn input
+{
+    width: 160px;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    background-color: #000080;
+    color: rgb(132, 0, 255);
+    padding: 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    opacity: 0.8;
+    transition: 0.3s;
+    animation: movebtn 1s infinite 3s;
+}
+
+section.contact .send_btn input:hover
+{
+    opacity: 1;
+}
+
+section.contact .bxl-facebook
+{
+    background-color: #000080;
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+section.contact .bxl-linkedin
+{
+    background-color: rgb(0, 119, 181);
+    color: rgb(255, 255, 255);
+    font-size: 45px;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+section.contact .bxl-instagram
+{
+  cursor: pointer;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+  border-radius: 10px;
+  transition: 0.3s;
+  color: #fff;
+  font-size: 45px;
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+section.contact .bxl-facebook:hover,
+section.contact .bxl-linkedin:hover,
+section.contact .bxl-instagram:hover
+{
+    transform: translateY(-8px);
+    opacity: 1;
+}
+
+
+/*===== FOOTER SECTION =====*/
+footer.footer
+{
+    padding: 0 10%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    width: 100%;
+}
+
+footer.footer p
+{
+    text-align: center;
+    padding: 30px 0;
+    font-weight: bolder;
+}
